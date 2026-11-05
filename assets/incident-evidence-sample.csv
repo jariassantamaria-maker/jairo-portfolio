@@ -1,0 +1,7 @@
+"event_id","source","elapsed_minutes","actor","platform","event","detail"
+"E01","platform-a","-2","Participant","A","join","Participant joined Platform A."
+"E02","platform-b","0","Facilitator","B","join","Facilitator joined Platform B."
+"E03","handover","0","Coordinator","B","handover","A note requests a move to Platform B. Delivery and acknowledgment are not confirmed."
+"E04","platform-a","8","Participant","A","leave","Participant left Platform A."
+"E05","platform-b","12","Facilitator","B","leave","Facilitator left Platform B."
+"E06","attendance","30","System","A","attendance","The fictional attendance export labels this sample session “No-show”."

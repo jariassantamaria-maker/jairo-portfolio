@@ -3,14 +3,15 @@
 A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivory, forest green, sage, burgundy accents, circular geometry and the original portrait. The interactive lab keeps a dark editorial treatment. No gold or copper accents. No build step, dependencies, external fonts, tracking, accounts or API keys.
 
 - Live site: [Jairo Arias — Portfolio](https://jariassantamaria-maker.github.io/jairo-portfolio/)
-- Expanded case: [Operational Data Integrity & Reporting](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/data-integrity.html)
+- Expanded case 01: [Operational Data Integrity & Reporting](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/data-integrity.html)
+- Expanded case 02: [Incident Investigation & Operational QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/incident-investigation.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
 
 ## Preview
 
-For the full local preview, serve this directory with `python3 -m http.server 8000` and visit http://localhost:8000. The expanded case uses a browser ES module and needs HTTP rather than a file URL. All demo processing happens in the browser; the local server only serves static files.
+For the full local preview, serve this directory with `python3 -m http.server 8000` and visit http://localhost:8000. The expanded cases use browser ES modules and need HTTP rather than file URLs. All demo processing happens in the browser; the local server only serves static files.
 
 ## GitHub Pages configuration
 
@@ -30,7 +31,7 @@ No custom domain, secrets or workflow configuration are required for this static
 ## Content and privacy
 
 - Reporting: implemented operational work; additional architecture changes are explicitly proposals.
-- Incident QA: investigation completed; recommendation implementation is not claimed.
+- Incident QA: investigation completed; recommendation implementation is not claimed. The expanded incident case adds a new fictional six-event scenario. Source filters affect the displayed timeline and review packet; deselection never proves absence, and changing a selection immediately invalidates an existing review. Facts cite evidence, hypotheses remain qualified, and the demo never changes attendance or assigns responsibility. Its CSV exports all six fictional events regardless of filters.
 - Enrollment wizard and Gmail routing: proposals, not production implementations.
 - The expanded data-integrity case includes a newly recreated validation worksheet. All ten request rows, the code dictionary and the validation rules are fictional. Unknown, ambiguous, missing and conflicting references are held; a repeated identical request is excluded. The sample and its counts are not original business records or measured outcomes.
 - The lab is a newly created portfolio prototype with fictional regions, counts and rules, not a reconstruction of internal systems.
@@ -39,6 +40,8 @@ No custom domain, secrets or workflow configuration are required for this static
 - The site does not connect to Gmail, send messages, store form data or execute enrollment actions. Mailto opens the visitor's mail app.
 
 ## Verification
+
+The incident investigation demo passes 12 unit-test groups and all 16 source combinations, including chronology, incomplete or contradictory intervals, no-source packets, qualified conclusions, selected-only citations, source preservation and exact downloadable CSV parity.
 
 The expanded validation demo passes nine unit scenarios covering exact normalization, matching, ambiguity, missing values, identical and conflicting duplicates, idempotence and raw-source preservation. The downloadable CSV matches the module’s source records exactly. The fixed fictional sample partitions into 4 ready, 5 requiring review and 1 excluded duplicate; 2 of the 4 ready records required standardization.
 
@@ -62,7 +65,11 @@ For future changes, recheck the layouts, interactive controls, scope labels and 
 
 - Homepage summaries: `index.html`.
 - Expanded case narrative: `case-studies/data-integrity.html`.
-- Case presentation: `assets/case-study.css`.
+- Shared case presentation: `assets/case-study.css`.
+- Incident narrative: `case-studies/incident-investigation.html`.
+- Incident timeline and review logic: `assets/incident-investigation-demo.js`.
+- Incident presentation: `assets/incident-study.css`.
+- Full fictional incident evidence: `assets/incident-evidence-sample.csv`.
 - Fictional validation logic and source rows: `assets/data-integrity-demo.js`.
 - Downloadable fictional sample: `assets/data-integrity-sample.csv` (keep in sync with the module).
 - Colors, typography and responsive layout: `styles.css`.

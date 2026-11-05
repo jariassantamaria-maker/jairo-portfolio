@@ -1,0 +1,44 @@
+/* The incident case shares the established portfolio and case-study palette. */
+.incident-specimen strong { display: block; margin-top: 6px; font: 24px/1.25 var(--serif); color: var(--forest); }
+.incident-source-options { border: 0; padding: 25px 0 5px; margin: 25px 0 0; min-width: 0; border-top: 1px solid var(--dark-line); }
+.incident-source-options legend { padding: 0 16px 0 0; font-size: 13px; color: #d3dec3; }
+.incident-source-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 30px; max-width: 850px; }
+.incident-source-grid label { display: flex; gap: 10px; align-items: center; margin-bottom: 0; min-height: 44px; font-size: 13px; color: var(--dark-text); cursor: pointer; }
+.incident-source-grid input { width: 20px; height: 20px; flex-shrink: 0; accent-color: #c2d0b2; }
+.incident-demo-heading { border-top: 1px solid var(--dark-line); padding-top: 24px; margin-top: 8px; }
+.incident-demo-heading h3 { font-family: var(--serif); font-size: 30px; }
+.incident-demo-heading p { font-size: 12px; max-width: 760px; }
+.incident-timeline-list { list-style: none; margin: 25px 0 40px; padding: 0; }
+.incident-event { position: relative; margin-left: 7px; padding: 0 0 25px 30px; border-left: 1px solid var(--dark-line); }
+.incident-event:last-child { border-left-color: transparent; padding-bottom: 0; }
+.incident-event::before { content: ''; position: absolute; width: 11px; height: 11px; border: 1px solid #adc19f; border-radius: 50%; background: #253e2d; left: -7px; top: 7px; }
+.incident-event-meta { display: flex; align-items: baseline; gap: 10px 20px; flex-wrap: wrap; font-size: 11px; }
+.incident-event-time { min-width: 88px; font-family: monospace; color: #d3dec3; }
+.incident-event-source { color: var(--dark-muted); }
+.incident-event-detail { margin: 6px 0 0; font-size: 14px; color: var(--dark-text) !important; max-width: 920px; }
+.incident-event .incident-citation { color: #d3dec3; font-size: 11px; }
+.incident-findings { border-top: 1px solid var(--dark-line); padding-top: 25px; }
+.incident-review-status { font-family: var(--serif); font-size: 32px; color: var(--dark-text); margin-top: 0; }
+.incident-review-summary { font-size: 14px; max-width: 850px; }
+.incident-review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 35px; margin-top: 30px; }
+.incident-review-column { padding: 20px 0 0; border: 0; border-top: 1px solid var(--dark-line); min-width: 0; }
+.incident-review-column h4 { font-size: 11px; text-transform: uppercase; letter-spacing: 1.8px; color: #d3dec3; margin: 0 0 18px; }
+.incident-review-list { padding: 0; margin: 0; list-style: none; font-size: 13px; color: var(--dark-muted); }
+.incident-review-list li { margin-bottom: 18px; }
+.incident-citation { display: inline-block; font-family: monospace; font-size: 11px; color: #d3dec3; margin-left: 4px; }
+.incident-pending { font-size: 14px; max-width: 850px; }
+.incident-limits { border-top: 1px solid var(--dark-line); margin-top: 35px; }
+.incident-limits ul { color: var(--dark-muted); padding-left: 20px; font-size: 13px; max-width: 900px; }
+.incident-limits li { margin-bottom: 12px; padding-left: 4px; }
+.incident-lab button:disabled { cursor: wait; opacity: .6; }
+@media (max-width: 1050px) { .incident-review-grid { gap: 23px; } }
+@media (max-width: 760px) {
+  .incident-source-grid { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .incident-review-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .incident-review-status { font-size: 29px; }
+  .incident-event { padding-left: 23px; }
+  .incident-event-meta { gap: 5px 12px; }
+  .incident-event-detail { font-size: 13px; }
+  .incident-review-column { padding-top: 20px; }
+  .incident-review-list li { margin-bottom: 16px; }
+}
