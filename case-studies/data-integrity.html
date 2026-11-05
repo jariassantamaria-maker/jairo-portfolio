@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eee2">
+  <meta name="description" content="How Jairo Arias approaches operational data validation, reconciliation and reporting. Explore a recreated sample with explicitly fictional data.">
+  <title>Operational Data Integrity & Reporting — Jairo Arias</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../assets/case-study.css">
+  <script type="module" src="../assets/data-integrity-demo.js"></script>
+</head>
+<body class="case-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="wordmark" href="../index.html" aria-label="Jairo Arias — home"><span class="monogram">JA<span class="brand-dot" aria-hidden="true">.</span></span><span class="wordmark-name">JAIRO ARIAS</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html#work">Work</a><a href="../index.html#lab">Lab</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="case-intro" aria-labelledby="case-title">
+      <a class="case-back" href="../index.html#work">← All selected work</a>
+      <div class="case-intro-grid">
+        <div>
+          <p class="eyebrow">CASE STUDY 01 / OPERATIONAL DATA INTEGRITY &amp; REPORTING</p>
+          <h1 id="case-title">Reliable data.<br><em>Clearer decisions.</em></h1>
+          <p class="case-lead">Making operational information ready for review starts with understanding how the records connect.</p>
+          <span class="badge">Reporting &amp; data validation performed</span>
+          <p class="fine case-status">Further reporting architecture improvements were proposed. The interactive sample on this page is a new portfolio recreation.</p>
+        </div>
+        <figure class="case-specimen">
+          <figcaption>Fictional example</figcaption>
+          <div class="specimen-value"><span>Original unit value</span><code> UNIT: beta-02 </code></div>
+          <span class="specimen-arrow" aria-hidden="true">↓</span>
+          <div class="specimen-value"><span>Standardized code</span><code>BETA-02</code></div>
+          <p>One exact reference match<br><strong>Demo Operations B</strong></p>
+        </figure>
+      </div>
+      <dl class="case-facts">
+        <div><dt>My contribution</dt><dd>Operational analysis, validation &amp; reporting</dd></div>
+        <div><dt>Tools used in the work</dt><dd>Tableau extracts, Excel, Google Sheets &amp; CSV</dd></div>
+        <div><dt>Deliverables</dt><dd>Reports, validation procedures &amp; handover documentation</dd></div>
+      </dl>
+    </section>
+    <nav class="case-jump" aria-label="Case study sections"><a href="#context">01 Context</a><a href="#approach">02 Approach</a><a href="#sample">03 Explore the sample</a><a href="#takeaways">04 Takeaways</a></nav>
+    <section class="case-context" id="context" aria-labelledby="context-title">
+      <div><p class="eyebrow">01 / THE CHALLENGE</p><h2 id="context-title">The risk was<br><em>in the match.</em></h2></div>
+      <div class="case-prose"><p class="lead">Recurring reports brought together extracts from multiple sources. Inconsistent assignment codes could leave records unmatched or place information in the wrong reporting context.</p><p>My reporting work involved checking how records connected, investigating inconsistent assignments and preparing recurring and ad hoc analyses. I also documented cleaning steps, matching checks, exception handling and handover instructions.</p><p>The contribution was structured information for operational analysis and performance review. No quantified reduction in errors or time savings is claimed.</p></div>
+    </section>
+    <section class="case-approach" id="approach" aria-labelledby="approach-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / THE ANALYTICAL APPROACH</p><h2 id="approach-title">A result you can<br><em>trace back.</em></h2></div><p>Understand the source.<br>Make the decision explainable.</p></div>
+      <ol class="approach-flow" role="list" aria-label="Illustration of the analytical approach">
+        <li><span class="approach-number" aria-hidden="true">01</span><h3>Inspect the source</h3><p>Understand the fields, code formats and reference data needed for the report.</p></li>
+        <li><span class="approach-number" aria-hidden="true">02</span><h3>Standardize carefully</h3><p>Apply documented normalization rules and retain the original value for comparison.</p></li>
+        <li><span class="approach-number" aria-hidden="true">03</span><h3>Validate the match</h3><p>Check references and formulas; flag inconsistent or unmatched records for review.</p></li>
+        <li><span class="approach-number" aria-hidden="true">04</span><h3>Document the handoff</h3><p>Explain the steps, checks and exceptions so a colleague can continue the work.</p></li>
+      </ol>
+      <p class="fine">Illustration of the approach. The rules and duplicate-handling controls in the demonstration below are fictional examples, not a specification of a former employer’s system.</p>
+    </section>
+    <section class="integrity-sample" id="sample" aria-labelledby="sample-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / A RECREATED DELIVERABLE</p><h2 id="sample-title">Inspect the record.<br><em>Explain the decision.</em></h2></div><span class="badge">Fictional data · New portfolio demo</span></div>
+      <p class="sample-disclosure">Every record, identifier, reference mapping and rule in this sample is fictional. These are demonstration results, not historical performance or an original operational tool.</p>
+      <div class="integrity-toolbar"><button id="integrity-run" class="button" type="button" disabled>Apply validation rules <span aria-hidden="true">→</span></button><button id="integrity-reset" class="text-button" type="button" disabled>Review source / reset ↺</button><a class="text-link" href="../assets/data-integrity-sample.csv" download>Download fictional source · CSV <span aria-hidden="true">↓</span></a></div>
+      <div id="integrity-summary" class="integrity-summary" role="status" aria-live="polite" aria-atomic="true"><p>Review the fictional source records, then apply the demonstration rules.</p></div>
+      <div id="integrity-records" class="integrity-records"><p>Download the fictional source to inspect the sample records.</p></div>
+      <div id="integrity-notes" class="integrity-notes"></div>
+      <details class="integrity-rules"><summary>Inspect the fictional rules &amp; reference dictionary</summary>
+        <div class="rules-grid"><div><h3>What the rules allow</h3><ol><li>Retain the raw value. Trim surrounding whitespace, remove an optional literal <code>UNIT:</code> prefix and convert the code to uppercase.</li><li>Accept a code only when it consists of letters, a hyphen and two digits, such as <code>BETA-02</code>. Do not repair punctuation or guess a code.</li><li>Use an exact match in the fictional dictionary. Unknown or ambiguous references require review.</li><li>Compare repeated request IDs. An identical canonical payload keeps the first row and excludes later copies. Conflicting payloads hold every row with that ID for review.</li></ol><p class="fine">Request IDs are compared after trimming surrounding whitespace and remain case-sensitive. No input is sent or saved.</p></div>
+        <div class="dictionary"><h3>The fictional reference</h3><dl><div><dt>ALPHA-01</dt><dd>Demo Operations A</dd></div><div><dt>BETA-02</dt><dd>Demo Operations B</dd></div><div><dt>GAMMA-03</dt><dd>Demo Support C</dd></div><div><dt>SHARED-01</dt><dd>Demo Operations D or E — ambiguous; hold for review</dd></div></dl><p class="fine">A missing value or a code absent from the dictionary stays unresolved.</p></div></div>
+      </details>
+      <noscript><p class="sample-disclosure">The interactive validation requires JavaScript. Download the fictional CSV and read the rules above to review the example.</p></noscript>
+    </section>
+    <section class="case-takeaways" id="takeaways" aria-labelledby="takeaways-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / WHAT THIS DEMONSTRATES</p><h2 id="takeaways-title">The judgment<br><em>behind the report.</em></h2></div></div>
+      <div class="takeaways-grid"><div><span class="eyebrow">TRACEABILITY</span><h3>Keep the original.</h3><p>Raw and standardized values should remain distinguishable so someone can understand how a reporting decision was reached.</p></div><div><span class="eyebrow">JUDGMENT</span><h3>Hold the uncertain.</h3><p>An unknown or ambiguous match is a question to investigate. A plausible assignment alone is not enough to treat it as validated.</p></div><div><span class="eyebrow">CONTINUITY</span><h3>Make it repeatable.</h3><p>Clear rules, exception notes and handover instructions help another analyst follow and review recurring work.</p></div></div>
+      <div class="case-outcome"><h3>Scope &amp; outcome</h3><p>Reporting, data-cleaning and documentation work were performed. Additional reporting architecture changes remained proposals. The table, sample rules and browser interaction above were created for this portfolio and do not establish implementation or measured impact in the original role.</p></div>
+    </section>
+    <section class="case-interview" aria-labelledby="interview-title"><div><p class="eyebrow">IN CONVERSATION</p><h2 id="interview-title">How I explain<br><em>the work.</em></h2></div><blockquote><p>“My reporting work involved more than producing totals. I had to understand how records from different sources connected, investigate inconsistent assignments and document the checks behind the result. That experience taught me to make validation rules explicit and distinguish a reliable match from a record that still needs investigation.”</p></blockquote></section>
+    <section class="case-next"><div><p class="eyebrow">CONTINUE EXPLORING</p><h2>From the records<br><em>to the bigger picture.</em></h2></div><div class="case-next-links"><a class="button" href="../index.html#lab">Explore the operations lab <span aria-hidden="true">↗</span></a><a class="text-link" href="../index.html#work">All selected work <span aria-hidden="true">→</span></a><a class="text-link" href="mailto:jariassantamaria@gmail.com">Discuss my work <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><span>© 2026 Jairo Arias Santamaría</span><span>Ideas. People. Projects. Real Impact.</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>

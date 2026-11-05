@@ -3,13 +3,14 @@
 A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivory, forest green, sage, burgundy accents, circular geometry and the original portrait. The interactive lab keeps a dark editorial treatment. No gold or copper accents. No build step, dependencies, external fonts, tracking, accounts or API keys.
 
 - Live site: [Jairo Arias — Portfolio](https://jariassantamaria-maker.github.io/jairo-portfolio/)
+- Expanded case: [Operational Data Integrity & Reporting](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/data-integrity.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
 
 ## Preview
 
-Open `index.html` in Safari, Chrome, Edge or Firefox. All site interactions run locally. Alternatively, serve this directory with `python3 -m http.server 8000` and visit http://localhost:8000.
+For the full local preview, serve this directory with `python3 -m http.server 8000` and visit http://localhost:8000. The expanded case uses a browser ES module and needs HTTP rather than a file URL. All demo processing happens in the browser; the local server only serves static files.
 
 ## GitHub Pages configuration
 
@@ -31,12 +32,15 @@ No custom domain, secrets or workflow configuration are required for this static
 - Reporting: implemented operational work; additional architecture changes are explicitly proposals.
 - Incident QA: investigation completed; recommendation implementation is not claimed.
 - Enrollment wizard and Gmail routing: proposals, not production implementations.
+- The expanded data-integrity case includes a newly recreated validation worksheet. All ten request rows, the code dictionary and the validation rules are fictional. Unknown, ambiguous, missing and conflicting references are held; a repeated identical request is excluded. The sample and its counts are not original business records or measured outcomes.
 - The lab is a newly created portfolio prototype with fictional regions, counts and rules, not a reconstruction of internal systems.
 - No learner identities, internal screenshots, raw logs, customer names or fabricated business results are included.
 - The downloadable résumé is the English Master Harvard Resume v2, converted from the supplied Word document into a public PDF edition. Client names, granular internal reconciliation figures, staffing/geographic scope and platform-specific incident detail were generalized. The supplied Word original was preserved unchanged. No experience or business results were added. The public PDF is `assets/Jairo_Arias_Santamaria_Master_Harvard_Resume_v2_Public.pdf`.
 - The site does not connect to Gmail, send messages, store form data or execute enrollment actions. Mailto opens the visitor's mail app.
 
 ## Verification
+
+The expanded validation demo passes nine unit scenarios covering exact normalization, matching, ambiguity, missing values, identical and conflicting duplicates, idempotence and raw-source preservation. The downloadable CSV matches the module’s source records exactly. The fixed fictional sample partitions into 4 ready, 5 requiring review and 1 excluded duplicate; 2 of the 4 ready records required standardization.
 
 Local checks passed for asset links and section anchors, JavaScript execution using a DOM stub, aggregate KPI 87.5% (210/240), Central KPI 80% (64/80), reset behavior and all 48 routing combinations. Human review takes precedence over missing information and specialist routing.
 
@@ -56,7 +60,11 @@ For future changes, recheck the layouts, interactive controls, scope labels and 
 
 ## Edit
 
-- Copy and case studies: `index.html`.
+- Homepage summaries: `index.html`.
+- Expanded case narrative: `case-studies/data-integrity.html`.
+- Case presentation: `assets/case-study.css`.
+- Fictional validation logic and source rows: `assets/data-integrity-demo.js`.
+- Downloadable fictional sample: `assets/data-integrity-sample.csv` (keep in sync with the module).
 - Colors, typography and responsive layout: `styles.css`.
 - Fictional sample data, calculations and demo routing: `app.js`.
 - Résumé: `assets/Jairo_Arias_Santamaria_Master_Harvard_Resume_v2_Public.pdf`.
