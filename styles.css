@@ -105,7 +105,7 @@ dd { margin: 0; color: var(--muted); font-size: 15px; }
 label { display: block; font-size: 12px; margin-bottom: 20px; }
 select { display: block; width: 100%; margin-top: 8px; background: #17291d; border: 1px solid #85927b; color: var(--dark-text); padding: 12px; border-radius: 0; min-height: 48px; }
 input[type=range] { width: 100%; display: block; margin: 18px 0 0; min-height: 24px; accent-color: #c2d0b2; }
-output { float: right; color: var(--dark-text); }
+#target-value { float: right; color: var(--dark-text); }
 .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 20px 0; }
 .metrics strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 36px; color: var(--dark-text); }
 .metrics span { font-size: 11px; color: var(--dark-muted); }
