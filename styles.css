@@ -96,6 +96,7 @@ dd { margin: 0; color: var(--muted); font-size: 15px; }
 .lab p, .lab label, .lab .fine { color: var(--dark-muted); }
 .lab .eyebrow, .lab summary { color: #c2d0b2; }
 .lab em { color: #c2d0b2; }
+.lab .text-link:hover { color: #d3dec3; }
 .lab :focus-visible, .contact :focus-visible { outline-color: #d3dec3; }
 .lab .badge { color: #d3dec3; border-color: #62745d; background: #26392c; }
 .demo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 65px; margin-top: 50px; border-top: 1px solid var(--dark-line); padding-top: 45px; }

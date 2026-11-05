@@ -1,0 +1,64 @@
+/* Four-step portfolio prototype. Uses the established ivory/forest/burgundy brand. */
+.wizard-specimen ol { padding: 0; margin: 0; list-style: none; display: grid; gap: 16px; }
+.wizard-specimen li { display: flex; align-items: center; justify-content: flex-start; gap: 15px; max-width: 225px; margin: auto; width: 100%; color: var(--forest); font-size: 13px; }
+.wizard-specimen li span { width: 28px; height: 28px; border: 1px solid #acb89e; border-radius: 50%; display: grid; place-items: center; font-size: 10px; flex-shrink: 0; }
+.enrollment-wizard [hidden] { display: none !important; }
+.enrollment-wizard { margin-top: 35px; border-top: 1px solid var(--dark-line); }
+.wizard-progress { list-style: none; margin: 0; padding: 28px 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; border-bottom: 1px solid var(--dark-line); }
+.wizard-progress li { display: flex; align-items: center; gap: 12px; color: var(--dark-muted); font-size: 13px; min-width: 0; }
+.wizard-progress li > span { display: grid; place-items: center; flex-shrink: 0; width: 33px; height: 33px; border: 1px solid #73816c; border-radius: 50%; color: var(--dark-muted); font-size: 11px; }
+.wizard-progress .is-current { color: var(--dark-text); font-weight: 700; }
+.wizard-progress .is-current > span { background: #c2d0b2; border-color: #c2d0b2; color: var(--dark); }
+.wizard-progress .is-complete > span { border-color: #c2d0b2; color: #d3dec3; }
+.wizard-step-title { font: 32px/1.2 var(--serif); margin: 32px 0 24px; color: var(--dark-text); }
+.wizard-step-title:focus { outline: none; }
+.wizard-step-title:focus-visible { outline: 2px solid #d3dec3; outline-offset: 6px; }
+.wizard-panel { max-width: 920px; }
+.wizard-intro { font-size: 14px; max-width: 800px; margin-bottom: 25px; }
+.wizard-field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 35px; }
+.wizard-field { min-width: 0; margin-bottom: 24px; }
+.wizard-field label { margin-bottom: 7px; font-size: 13px; color: var(--dark-text); }
+.wizard-required { font-size: 11px; color: var(--dark-muted); }
+.wizard-field select { margin-top: 0; }
+.enrollment-lab .wizard-help { font-size: 12px; margin: 8px 0 0; color: var(--dark-muted); }
+.wizard-field .wizard-check { display: flex; align-items: flex-start; gap: 12px; min-height: 44px; padding-top: 6px; margin-bottom: 0; cursor: pointer; }
+.wizard-check input { flex-shrink: 0; width: 20px; height: 20px; accent-color: #c2d0b2; margin: 2px 0 0; }
+.wizard-route-preview { border-left: 2px solid #c2d0b2; padding: 12px 18px; margin: 0 0 24px; color: #d3dec3; font-size: 14px; line-height: 1.7; }
+.wizard-errors:not(:empty) { border-left: 2px solid #edb9c0; margin: 0 0 24px; padding: 12px 18px; color: #f2c2c5; font-size: 14px; }
+.enrollment-lab .wizard-errors p { color: #f2c2c5; margin: 0; }
+.wizard-errors ul { padding-left: 18px; margin-bottom: 0; }
+.enrollment-lab .wizard-field-error { color: #f2c2c5; font-size: 12px; margin: 8px 0 0; }
+.enrollment-wizard [aria-invalid="true"] { border-color: #edb9c0; outline-color: #edb9c0; }
+.wizard-navigation { display: flex; gap: 12px 28px; align-items: center; flex-wrap: wrap; border-top: 1px solid var(--dark-line); margin-top: 28px; padding-top: 24px; }
+.enrollment-lab .button { background: #c2d0b2; border-color: #c2d0b2; color: var(--dark); }
+.enrollment-lab .button:hover { background: var(--paper); border-color: var(--paper); }
+.enrollment-wizard button:disabled { cursor: wait; opacity: .6; }
+.wizard-status { font-size: 13px; min-height: 1.65em; max-width: 920px; margin: 18px 0 0; }
+.wizard-summary { border-top: 1px solid var(--dark-line); padding-top: 24px; margin-top: 20px; }
+.wizard-route-status { color: #d3dec3 !important; font: 27px/1.25 var(--serif); }
+.wizard-summary-list { display: grid; grid-template-columns: minmax(130px, .7fr) minmax(0, 1.3fr); gap: 12px 25px; margin: 25px 0; }
+.wizard-summary-list dt { margin: 0; color: #d3dec3; font-size: 11px; }
+.wizard-summary-list dd { color: var(--dark-text); font-size: 14px; }
+.enrollment-lab .wizard-summary-boundary { font-size: 12px; max-width: 800px; }
+.wizard-edit-actions { display: flex; align-items: center; gap: 10px 25px; flex-wrap: wrap; margin: 15px 0 30px; }
+.wizard-edit-actions .text-button { padding: 7px 0; }
+.enrollment-wizard > .wizard-panel > label { font-size: 13px; color: var(--dark-text); margin: 0 0 5px; }
+.wizard-note { display: block; width: 100%; min-height: 280px; margin-top: 15px; padding: 16px; font: 12px/1.8 monospace; color: var(--dark-text); background: #17291d; border: 1px solid #85927b; border-radius: 0; resize: vertical; overflow-wrap: anywhere; white-space: pre-wrap; }
+.wizard-copy { margin-top: 18px; }
+@media (max-width: 760px) {
+  .wizard-progress { gap: 13px; padding: 23px 0; }
+  .wizard-progress li { flex-direction: column; align-items: flex-start; gap: 8px; font-size: 11px; }
+  .wizard-progress li > span { width: 29px; height: 29px; }
+  .wizard-step-title { font-size: 28px; }
+  .wizard-field-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .wizard-field { margin-bottom: 24px; }
+  .wizard-navigation { gap: 5px 22px; }
+  .wizard-summary-list { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .wizard-summary-list dd { margin-bottom: 14px; }
+  .wizard-edit-actions { gap: 3px 22px; }
+  .wizard-route-status { font-size: 25px; }
+  .wizard-note { font-size: 12px; min-height: 310px; }
+}
+
+.wizard-hold-reasons { padding-left: 18px; color: var(--dark-muted); font-size: 14px; line-height: 1.75; }
+.wizard-hold-reasons li { margin-bottom: 8px; }

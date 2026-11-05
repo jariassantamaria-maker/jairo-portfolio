@@ -5,6 +5,7 @@ A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivo
 - Live site: [Jairo Arias — Portfolio](https://jariassantamaria-maker.github.io/jairo-portfolio/)
 - Expanded case 01: [Operational Data Integrity & Reporting](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/data-integrity.html)
 - Expanded case 02: [Incident Investigation & Operational QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/incident-investigation.html)
+- Expanded case 03: [Interactive Enrollment Wizard](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enrollment-wizard.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
@@ -18,7 +19,7 @@ For the full local preview, serve this directory with `python3 -m http.server 80
 The portfolio and public résumé are already publicly accessible. The following configuration can also be used to deploy a separate copy.
 
 1. Sign in to your GitHub account and create a repository, for example `jairo-portfolio`. A public repository can use GitHub Pages on GitHub Free. Do not upload internal work files.
-2. Upload the **contents** of this folder to the repository root: `index.html`, `styles.css`, `app.js`, `assets/` and `.nojekyll`. Keep `index.html` at the root, not inside another portfolio folder. The README may also be included.
+2. Upload the **contents** of this folder to the repository root: `index.html`, `styles.css`, `app.js`, `assets/`, `case-studies/` and `.nojekyll`. Keep `index.html` at the root, not inside another portfolio folder. The README may also be included.
 3. Commit the files to `main`.
 4. Open repository **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, then **main** and **/(root)**. Save.
 5. Wait for the Pages deployment to finish. Use the exact URL GitHub displays, normally `https://YOUR-USERNAME.github.io/jairo-portfolio/`.
@@ -32,7 +33,7 @@ No custom domain, secrets or workflow configuration are required for this static
 
 - Reporting: implemented operational work; additional architecture changes are explicitly proposals.
 - Incident QA: investigation completed; recommendation implementation is not claimed. The expanded incident case adds a new fictional six-event scenario. Source filters affect the displayed timeline and review packet; deselection never proves absence, and changing a selection immediately invalidates an existing review. Facts cite evidence, hypotheses remain qualified, and the demo never changes attendance or assigns responsibility. Its CSV exports all six fictional events regardless of filters.
-- Enrollment wizard and Gmail routing: proposals, not production implementations.
+- Enrollment wizard and Gmail routing: proposals, not original production implementations. The expanded wizard is a new four-step browser prototype using only fixed fictional request, region and site choices. It does not request names or contact data, perform enrollment, check actual compliance or connect to an operational system. A human-review hold is explicit when a fictional record or path change is unresolved. Generated notes are qualified drafts only; no request is submitted.
 - The expanded data-integrity case includes a newly recreated validation worksheet. All ten request rows, the code dictionary and the validation rules are fictional. Unknown, ambiguous, missing and conflicting references are held; a repeated identical request is excluded. The sample and its counts are not original business records or measured outcomes.
 - The lab is a newly created portfolio prototype with fictional regions, counts and rules, not a reconstruction of internal systems.
 - No learner identities, internal screenshots, raw logs, customer names or fabricated business results are included.
@@ -40,6 +41,8 @@ No custom domain, secrets or workflow configuration are required for this static
 - The site does not connect to Gmail, send messages, store form data or execute enrollment actions. Mailto opens the visitor's mail app.
 
 ## Verification
+
+The enrollment wizard passes 15 unit/mounted-state test groups and all 24 branch/region combinations. Checks cover conditional routing, human-review holds, required values and field focus, hidden-branch isolation, backward editing, invalidation of stale notes, checkpoint reconfirmation when context changes, reset, Enter behavior, truthful clipboard success/manual fallback and asynchronous copy/reset handling.
 
 The incident investigation demo passes 12 unit-test groups and all 16 source combinations, including chronology, incomplete or contradictory intervals, no-source packets, qualified conclusions, selected-only citations, source preservation and exact downloadable CSV parity.
 
@@ -70,6 +73,9 @@ For future changes, recheck the layouts, interactive controls, scope labels and 
 - Incident timeline and review logic: `assets/incident-investigation-demo.js`.
 - Incident presentation: `assets/incident-study.css`.
 - Full fictional incident evidence: `assets/incident-evidence-sample.csv`.
+- Enrollment proposal narrative and form: `case-studies/enrollment-wizard.html`.
+- Fictional wizard rules, validation and copy lifecycle: `assets/enrollment-wizard.js`.
+- Wizard presentation: `assets/enrollment-wizard.css`.
 - Fictional validation logic and source rows: `assets/data-integrity-demo.js`.
 - Downloadable fictional sample: `assets/data-integrity-sample.csv` (keep in sync with the module).
 - Colors, typography and responsive layout: `styles.css`.
