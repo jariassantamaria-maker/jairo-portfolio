@@ -29,6 +29,12 @@ function routeScenario(mode,request,complete,sensitive) {
   if (request==='billing') return {destination:'Billing review queue',reason:'A billing question requires the relevant specialist.',step:'Prepare a billing handoff; do not approve a payment.'};
   return mode==='enrollment' ? {destination:'Enrollment review',reason:'The sample request is complete and passes the demo checks.',step:'Show the review checkpoint and draft a standardized handoff.'} : {destination:'Enrollment inbox label',reason:'A complete enrollment request matches the example routing rule.',step:'Preview a label and suggested owner; no email is sent.'};
 }
+let routeIsCurrent = false;
+byId('workflow').addEventListener('change',()=>{
+  if (!routeIsCurrent) return;
+  byId('route').textContent='Choices changed. Run the simulation to refresh the route.';
+  routeIsCurrent=false;
+});
 byId('workflow').addEventListener('submit',event=>{
   event.preventDefault();
   const mode=byId('mode').value, request=byId('request').value;
@@ -39,6 +45,7 @@ byId('workflow').addEventListener('submit',event=>{
   [mode==='enrollment'?'Start enrollment concept':'Start inbox routing concept',result.reason,result.step].forEach(text=>{const li=document.createElement('li');li.textContent=text;list.append(li);});
   const note=document.createElement('p');note.className='fine';note.textContent='Simulation complete. No real request was processed.';
   byId('route').append(title,list,note);
+  routeIsCurrent=true;
 });
-byId('workflow').addEventListener('reset',()=>{byId('route').textContent='Choose a scenario, then run the simulation.';});
+byId('workflow').addEventListener('reset',()=>{routeIsCurrent=false;byId('route').textContent='Choose a scenario, then run the simulation.';});
 renderKpi();

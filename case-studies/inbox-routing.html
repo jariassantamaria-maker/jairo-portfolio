@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eee2">
+  <meta name="description" content="Jairo Arias's inbox-routing proposal: operational requirements, ownership rules and human review, explored through a fictional interactive prototype.">
+  <title>Inbox Routing &amp; Human Review — Jairo Arias</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../assets/case-study.css">
+  <link rel="stylesheet" href="../assets/inbox-routing.css">
+  <script type="module" src="../assets/inbox-routing.js"></script>
+</head>
+<body class="case-page inbox-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="wordmark" href="../index.html" aria-label="Jairo Arias — home"><span class="monogram">JA<span class="brand-dot" aria-hidden="true">.</span></span><span class="wordmark-name">JAIRO ARIAS</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html#work">Work</a><a href="../index.html#lab">Lab</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="case-intro" aria-labelledby="case-title">
+      <a class="case-back" href="../index.html#work">← All selected work</a>
+      <div class="case-intro-grid">
+        <div>
+          <p class="eyebrow">CASE STUDY 04 / INBOX ROUTING</p>
+          <h1 id="case-title">A clear owner.<br><em>A reason to route.</em></h1>
+          <p class="case-lead">Translating manual inbox triage into explicit rules for classification, record matching and human review.</p>
+          <span class="badge concept">Design proposal · Not implemented in production</span>
+          <p class="fine case-status">My contribution was requirements analysis and an automation concept. The interactive example below is a new portfolio prototype using invented messages and rules.</p>
+          <a class="text-link" href="#prototype">Explore the routing decisions <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="case-specimen inbox-specimen">
+          <figcaption>Illustrative decision path</figcaption>
+          <ol class="inbox-specimen-path"><li>Read the request</li><li>Check context &amp; ownership</li><li><strong>Route or review</strong></li></ol>
+          <p>A destination with an explanation.</p>
+        </figure>
+      </div>
+      <dl class="case-facts">
+        <div><dt>My contribution</dt><dd>Routing requirements &amp; automation proposal</dd></div>
+        <div><dt>Deliverables</dt><dd>Routing matrix, data requirements &amp; human oversight concept</dd></div>
+        <div><dt>What to explore</dt><dd>Rule priorities, ownership conflicts &amp; reviewable decisions</dd></div>
+      </dl>
+    </section>
+    <nav class="case-jump" aria-label="Case study sections"><a href="#context">01 Context</a><a href="#approach">02 Approach</a><a href="#prototype">03 Try the routing</a><a href="#takeaways">04 Takeaways</a></nav>
+    <section class="case-context" id="context" aria-labelledby="context-title">
+      <div><p class="eyebrow">01 / THE CHALLENGE</p><h2 id="context-title">An inbox is also<br><em>a decision queue.</em></h2></div>
+      <div class="case-prose">
+        <p class="lead">Manual triage required classifying a request, matching it to a record and identifying the team responsible for the next step.</p>
+        <p>I analyzed the routing requirements and proposed rules based on issue type, request status and stakeholder ownership. The deliverables were a routing matrix, data requirements and an automation concept with human oversight.</p>
+        <p>The work remained a proposal. It did not establish a production Gmail automation or measured time savings.</p>
+      </div>
+    </section>
+    <section class="case-approach" id="approach" aria-labelledby="approach-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / THE DESIGN APPROACH</p><h2 id="approach-title">Make the rule visible.<br><em>Keep judgment human.</em></h2></div><p>Classify the work.<br>Explain the next step.</p></div>
+      <ol class="approach-flow" role="list" aria-label="Routing design approach">
+        <li><span class="approach-number" aria-hidden="true">01</span><h3>Define the inputs</h3><p>Identify the request details and record information needed for a routing decision.</p></li>
+        <li><span class="approach-number" aria-hidden="true">02</span><h3>Map ownership</h3><p>Relate the issue type and request status to a responsible team or existing owner.</p></li>
+        <li><span class="approach-number" aria-hidden="true">03</span><h3>Expose exceptions</h3><p>Make uncertainty visible and leave decisions that need judgment with a person.</p></li>
+        <li><span class="approach-number" aria-hidden="true">04</span><h3>Explain the handoff</h3><p>Keep the proposed destination and the information supporting it together.</p></li>
+      </ol>
+      <div class="inbox-story">
+        <div><p class="eyebrow">THE MANUAL QUESTION</p><h3>“Who should handle this?”</h3><p>Classification, record matching and ownership must be considered together before choosing a destination.</p></div>
+        <div><p class="eyebrow">THE PROPOSED STRUCTURE</p><h3>“This rule applies, because…”</h3><p>A routing matrix can make the decision understandable and show where information or human review is still needed.</p></div>
+      </div>
+      <p class="fine">The following priorities are invented to demonstrate the concept; they are not the original operational routing matrix.</p>
+    </section>
+    <section class="integrity-sample inbox-lab" id="prototype" aria-labelledby="prototype-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / EXPLORE THE PROTOTYPE</p><h2 id="prototype-title">Change the facts.<br><em>Follow the decision.</em></h2></div><span class="badge">Fictional messages &amp; rules</span></div>
+      <p class="sample-disclosure">Pick an invented message, then change its routing facts to see what would require review. The example uses fixed choices, runs only in this browser and has no connection to Gmail. It does not read, label, assign or send email.</p>
+      <form id="inbox-simulator" autocomplete="off">
+        <div class="inbox-workbench">
+          <div>
+            <label for="inbox-sample">Choose a fictional message</label>
+            <select id="inbox-sample" name="sample">
+              <option value="enrollment">01 · A clear new request</option>
+              <option value="existing">02 · A follow-up with an owner</option>
+              <option value="missing">03 · Missing information</option>
+              <option value="conflict">04 · Conflicting matches</option>
+              <option value="sensitive">05 · A decision for a person</option>
+            </select>
+            <article class="inbox-message-preview" aria-labelledby="inbox-subject">
+              <p class="eyebrow">FICTIONAL MESSAGE / DEMONSTRATION ONLY</p>
+              <h3 id="inbox-subject">New enrollment request · DEMO-101</h3>
+              <p id="inbox-message">Please review this new enrollment request. The fictional reference and required details are included.</p>
+            </article>
+            <p id="inbox-edited" class="inbox-modified" hidden>Modified scenario: the selected routing facts differ from this sample message. The simulation evaluates your selected facts.</p>
+          </div>
+          <div>
+            <fieldset class="inbox-facts" aria-describedby="inbox-facts-help">
+              <legend>Routing facts · adjust to compare</legend>
+              <div class="inbox-field-grid">
+                <label for="inbox-category">Request type<select id="inbox-category" name="category"><option value="enrollment">Enrollment request</option><option value="technical">Technical issue</option><option value="billing">Billing question</option><option value="unclear">Unclear or mixed request</option></select></label>
+                <label for="inbox-requestStatus">Request status<select id="inbox-requestStatus" name="requestStatus"><option value="new">New request</option><option value="existing">Existing open request</option><option value="closed">Previously closed request</option></select></label>
+                <label for="inbox-recordMatch">Record match<select id="inbox-recordMatch" name="recordMatch"><option value="matched">One record matches</option><option value="missing">No matching record</option><option value="conflicting">Conflicting matches</option></select></label>
+                <label for="inbox-information">Required information<select id="inbox-information" name="information"><option value="complete">Complete in this demo</option><option value="missing">Missing in this demo</option></select></label>
+              </div>
+              <label class="inbox-sensitive" for="inbox-sensitive"><input id="inbox-sensitive" name="sensitive" type="checkbox"><span>Requires a sensitive decision / human review</span></label>
+              <p class="inbox-controls-help" id="inbox-facts-help">These choices simulate classification and record checks. No message analysis or record lookup takes place.</p>
+            </fieldset>
+            <div class="inbox-actions"><button id="inbox-run" type="submit" class="button" disabled>Evaluate scenario <span aria-hidden="true">→</span></button><button id="inbox-reset" type="button" class="text-button" disabled>Reset scenario ↺</button></div>
+          </div>
+        </div>
+        <p id="inbox-status" class="inbox-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="inbox-result" class="inbox-result"><p class="inbox-pending">Choose a sample, adjust its routing facts and evaluate the scenario.</p></div>
+      </form>
+      <noscript><p class="sample-disclosure">JavaScript is required for the simulator. The case study and complete fictional rule order remain readable.</p></noscript>
+      <details class="inbox-rulebook"><summary>Inspect the fictional rule order</summary><p class="fine">The first matching rule wins. Later rules are not evaluated once a decision is reached.</p><ol>
+        <li><strong>Protect sensitive decisions.</strong> A sensitive decision always goes to human review.</li>
+        <li><strong>Resolve conflicting matches.</strong> Conflicting records require a person to resolve ownership.</li>
+        <li><strong>Check the information.</strong> A missing record or missing required information pauses routing.</li>
+        <li><strong>Review closed requests.</strong> A closed request is reviewed before any reopening decision.</li>
+        <li><strong>Clarify the request.</strong> An unclear or mixed request needs classification review.</li>
+        <li><strong>Keep existing ownership.</strong> A complete, clear, open request returns to its existing demo owner.</li>
+        <li><strong>Route a new request.</strong> A complete, clear, new request follows its issue type.</li>
+      </ol></details>
+    </section>
+    <section class="case-takeaways" id="takeaways" aria-labelledby="takeaways-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / WHAT THIS DEMONSTRATES</p><h2 id="takeaways-title">A useful rule includes<br><em>its limits.</em></h2></div></div>
+      <div class="takeaways-grid">
+        <div><span class="eyebrow">REQUIREMENTS ANALYSIS</span><h3>Define what is needed.</h3><p>Turn a broad automation idea into specific inputs, conditions and ownership questions.</p></div>
+        <div><span class="eyebrow">OPERATIONAL JUDGMENT</span><h3>Make uncertainty actionable.</h3><p>Distinguish a clear destination from a case that needs more information or a person’s decision.</p></div>
+        <div><span class="eyebrow">REVIEWABLE LOGIC</span><h3>Show the reason.</h3><p>Explain the rule behind a proposed route so the decision can be understood and challenged.</p></div>
+      </div>
+      <div class="case-outcome"><h3>Scope &amp; outcome</h3><p>The original deliverables were a routing matrix, data requirements and a proposal with human oversight. This new prototype illustrates those ideas with fictional rules. Production deployment, adoption and quantified business results are not claimed.</p></div>
+    </section>
+    <section class="case-interview" aria-labelledby="interview-title"><div><p class="eyebrow">IN CONVERSATION</p><h2 id="interview-title">How I explain<br><em>the contribution.</em></h2></div><blockquote><p>“I analyzed how requests should be classified, matched and routed, then proposed a rules-based approach with human oversight. My contribution was the operational requirements and design proposal. This portfolio example makes that reasoning tangible.”</p></blockquote></section>
+    <section class="case-next"><div><p class="eyebrow">CONTINUE EXPLORING</p><h2>From the right owner<br><em>to a guided next step.</em></h2></div><div class="case-next-links"><a class="button" href="enrollment-wizard.html">Case 03: Enrollment Wizard <span aria-hidden="true">←</span></a><a class="text-link" href="../index.html#work">All selected work <span aria-hidden="true">→</span></a><a class="text-link" href="mailto:jariassantamaria@gmail.com">Discuss my work <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><span>© 2026 Jairo Arias Santamaría</span><span>Ideas. People. Projects. Real Impact.</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>

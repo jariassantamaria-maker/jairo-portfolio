@@ -1,4 +1,4 @@
-# Jairo Arias — Portfolio v1
+# Jairo Arias — Operations portfolio
 
 A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivory, forest green, sage, burgundy accents, circular geometry and the original portrait. The interactive lab keeps a dark editorial treatment. No gold or copper accents. No build step, dependencies, external fonts, tracking, accounts or API keys.
 
@@ -6,6 +6,7 @@ A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivo
 - Expanded case 01: [Operational Data Integrity & Reporting](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/data-integrity.html)
 - Expanded case 02: [Incident Investigation & Operational QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/incident-investigation.html)
 - Expanded case 03: [Interactive Enrollment Wizard](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enrollment-wizard.html)
+- Expanded case 04: [Inbox Routing & Human Review](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/inbox-routing.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
@@ -42,6 +43,14 @@ No custom domain, secrets or workflow configuration are required for this static
 
 ## Verification
 
+Update of 8 November 2026: clarified recruiter-facing homepage copy, linked all four expanded cases, refined responsive navigation and readable form controls, and invalidated the homepage simulator's result whenever its inputs change. Original portrait, public résumé and existing demonstration data remain unchanged.
+
+The new inbox-routing prototype passes all 144 combinations of request type, request status, record match, information completeness and the human-review flag. Checks cover rule priority, invalid values, sample outcomes, rendered decision traces, result focus, stale-result clearing and reset. Its five invented messages demonstrate a clean new request, existing ownership, missing information, conflicting matches and human review. Rule priorities and all messages are fictional; this is not a Gmail integration or a claim of production automation.
+
+The existing three case demonstrations were rerun against this source and passed the regression checks below.
+
+Browser review of this update confirmed all seven inbox rules, the five sample messages, resetting and invalidating changed results, plus the enrollment renewal/hold/edit/reconfirmation/copy paths. The clipboard copy matched the generated renewal draft. All five pages fit 360, 768 and 1440 pixel viewports without horizontal page overflow. The homepage result invalidation and the new case-to-case links were also verified. Physical-device and screen-reader testing remain outside this verification.
+
 The enrollment wizard passes 15 unit/mounted-state test groups and all 24 branch/region combinations. Checks cover conditional routing, human-review holds, required values and field focus, hidden-branch isolation, backward editing, invalidation of stale notes, checkpoint reconfirmation when context changes, reset, Enter behavior, truthful clipboard success/manual fallback and asynchronous copy/reset handling.
 
 The incident investigation demo passes 12 unit-test groups and all 16 source combinations, including chronology, incomplete or contradictory intervals, no-source packets, qualified conclusions, selected-only citations, source preservation and exact downloadable CSV parity.
@@ -65,6 +74,10 @@ Limit: an assistive-technology audit has not been completed. Viewport checks do 
 For future changes, recheck the layouts, interactive controls, scope labels and résumé download. Additional checks should cover 200% zoom, full keyboard-only navigation, screen-reader announcements and physical devices. Keep any replacement résumé suitable for public release.
 
 ## Edit
+
+- Inbox-routing narrative and form: `case-studies/inbox-routing.html`.
+- Fictional routing rules, sample messages and result lifecycle: `assets/inbox-routing.js`.
+- Inbox-routing presentation: `assets/inbox-routing.css`.
 
 - Homepage summaries: `index.html`.
 - Expanded case narrative: `case-studies/data-integrity.html`.
