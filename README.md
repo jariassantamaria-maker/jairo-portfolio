@@ -38,7 +38,7 @@ No custom domain, secrets or workflow configuration are required for this static
 - The expanded data-integrity case includes a newly recreated validation worksheet. All ten request rows, the code dictionary and the validation rules are fictional. Unknown, ambiguous, missing and conflicting references are held; a repeated identical request is excluded. The sample and its counts are not original business records or measured outcomes.
 - The lab is a newly created portfolio prototype with fictional regions, counts and rules, not a reconstruction of internal systems.
 - No learner identities, internal screenshots, raw logs, customer names or fabricated business results are included.
-- The downloadable résumé is the English Master Harvard Resume v2, converted from the supplied Word document into a public PDF edition. Client names, granular internal reconciliation figures, staffing/geographic scope and platform-specific incident detail were generalized. The supplied Word original was preserved unchanged. No experience or business results were added. The public PDF is `assets/Jairo_Arias_Santamaria_Master_Harvard_Resume_v2_Public.pdf`.
+- The current downloadable résumé is `assets/Jairo_Arias_Santamaria_Resume_Public.pdf`, a two-page public English edition updated on 9 November 2026 using Jairo’s confirmed responsibilities. It adds actual reporting metrics and daily-to-annual schedules, daily management/stakeholder reviews, client–supplier POC communication and escalation to Shipping/Billing. Offboarding is presented as data-quality decision support, without ownership of decisions or process administration. Existing dates, education, tools, contact details and approximately 12 daily reports/analyses are retained from the prior public CV. No new quantified outcomes are claimed. The original Word source and prior v2 public PDF are preserved.
 - The site does not connect to Gmail, send messages, store form data or execute enrollment actions. Mailto opens the visitor's mail app.
 
 ## Verification
@@ -93,6 +93,6 @@ For future changes, recheck the layouts, interactive controls, scope labels and 
 - Downloadable fictional sample: `assets/data-integrity-sample.csv` (keep in sync with the module).
 - Colors, typography and responsive layout: `styles.css`.
 - Fictional sample data, calculations and demo routing: `app.js`.
-- Résumé: `assets/Jairo_Arias_Santamaria_Master_Harvard_Resume_v2_Public.pdf`.
+- Current résumé: `assets/Jairo_Arias_Santamaria_Resume_Public.pdf`.
 - Original portrait: `assets/jairo-arias-portrait.png`.
 - Brand colors and circular forms: the variables and hero/contact rules in `styles.css`.
