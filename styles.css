@@ -237,3 +237,13 @@ footer > span { align-self: center; }
   nav { flex-wrap: wrap; justify-content: flex-end; column-gap: 14px; row-gap: 0; }
 }
 
+
+/* Featured goFLUENT case studies: native typography and responsive two-column layout. */
+.featured-reconstruction{margin:36px 0 72px;padding:30px 0 0;border-top:1px solid var(--line,#b5c3b4)}
+.featured-reconstruction .featured-title{margin:14px 0 30px;font-size:clamp(25px,3vw,36px);line-height:1.15;letter-spacing:-.02em}
+.featured-reconstruction .experience-grid{gap:26px 34px}
+.featured-reconstruction .experience-card{padding-top:18px;border-top-width:1px}
+.featured-reconstruction .experience-card h3{font-size:clamp(21px,2.3vw,28px);line-height:1.2}
+.featured-reconstruction .experience-card p{max-width:550px}
+.featured-reconstruction .experience-card .text-link{display:inline-block;margin-top:8px}
+@media(max-width:760px){.featured-reconstruction{margin-bottom:46px}.featured-reconstruction .experience-grid{gap:26px}}
