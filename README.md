@@ -10,6 +10,13 @@ A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivo
 - Expanded case 05: [Performance Reporting Pilot](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/performance-reporting-pilot.html)
 - Expanded case 06: [Interactive Enrollment Wizard](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enrollment-wizard.html)
 - Expanded case 07: [Inbox Routing & Human Review](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/inbox-routing.html)
+- Expanded case 08: [Change Requests, SOPs & Operational Governance](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/operations-governance.html)
+- Expanded case 09: [Learner Widget Pro & Data QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/learner-operations-tool.html)
+- Expanded case 10: [Trainer Intelligence & Matching Support](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/trainer-intelligence.html)
+- Expanded case 11: [Amazon Business Unit Anomaly Audit](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/amazon-bu-audit.html)
+- Expanded case 12: [Operational Leadership & Team Enablement](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/team-enablement.html)
+- Expanded case 13: [Service Quality Research & Technical Logs](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/service-quality-research.html)
+- Current résumé: [Printable HTML](https://jariassantamaria-maker.github.io/jairo-portfolio/resume.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
