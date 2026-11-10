@@ -4,11 +4,12 @@ A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivo
 
 - Live site: [Jairo Arias — Portfolio](https://jariassantamaria-maker.github.io/jairo-portfolio/)
 - Expanded case 01: [Operational Data Integrity & Reporting](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/data-integrity.html)
-- Expanded case 02: [Incident Investigation & Operational QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/incident-investigation.html)
-- Expanded case 03: [Reporting Continuity & Handover](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/reporting-continuity.html)
-- Expanded case 04: [Performance Reporting Pilot](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/performance-reporting-pilot.html)
-- Expanded case 05: [Interactive Enrollment Wizard](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enrollment-wizard.html)
-- Expanded case 06: [Inbox Routing & Human Review](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/inbox-routing.html)
+- Expanded case 02: [Supplier Discrepancy Review & Billing Support](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/supplier-discrepancy-review.html)
+- Expanded case 03: [Incident Investigation & Operational QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/incident-investigation.html)
+- Expanded case 04: [Reporting Continuity & Handover](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/reporting-continuity.html)
+- Expanded case 05: [Performance Reporting Pilot](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/performance-reporting-pilot.html)
+- Expanded case 06: [Interactive Enrollment Wizard](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enrollment-wizard.html)
+- Expanded case 07: [Inbox Routing & Human Review](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/inbox-routing.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
@@ -46,6 +47,8 @@ No custom domain, secrets or workflow configuration are required for this static
 - The site does not connect to Gmail, send messages, store form data or execute enrollment actions. Mailto opens the visitor's mail app.
 
 ## Verification
+
+Supplier-case update of 9 November 2026: added a public HH Global case on manual shipping-cost discrepancy review, recurring patterns, scanned POD/POP records, early stakeholder reviews and escalation to Shipping/Billing. The qualitative outcome is clearer context and more focused follow-up; no measured reduction in backlog or guaranteed prevention of billing delays is claimed. The workflow is manual; AI-assisted reporting belongs to the separate goFLUENT experience. Updated only the HH résumé bullets, preserving the remaining CV content and two-page format. Original supplier records and identities are not included.
 
 Update of 9 November 2026: aligned the portfolio and public résumé with confirmed reporting automation, source-based validation, handover documentation and a presented/tested reporting pilot. Added public continuity and pilot summaries. Apps Script supports reporting displays in Sheets from CSV; Gemini/ChatGPT assist parts of processing; outputs are checked against Tableau. Pilot expansion and broader implementation remained pending. Its documented shadow-run sequence remains a plan, not a claim of completed validation. Internal documents, records and credentials were not included. Existing fictional demo logic and data remain unchanged. Static HTML/link/content checks and PDF visual review were performed for this update; browser publication verification follows deployment.
 
