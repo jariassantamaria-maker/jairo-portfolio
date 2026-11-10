@@ -5,8 +5,10 @@ A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivo
 - Live site: [Jairo Arias — Portfolio](https://jariassantamaria-maker.github.io/jairo-portfolio/)
 - Expanded case 01: [Operational Data Integrity & Reporting](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/data-integrity.html)
 - Expanded case 02: [Incident Investigation & Operational QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/incident-investigation.html)
-- Expanded case 03: [Interactive Enrollment Wizard](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enrollment-wizard.html)
-- Expanded case 04: [Inbox Routing & Human Review](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/inbox-routing.html)
+- Expanded case 03: [Reporting Continuity & Handover](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/reporting-continuity.html)
+- Expanded case 04: [Performance Reporting Pilot](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/performance-reporting-pilot.html)
+- Expanded case 05: [Interactive Enrollment Wizard](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enrollment-wizard.html)
+- Expanded case 06: [Inbox Routing & Human Review](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/inbox-routing.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
@@ -32,7 +34,9 @@ No custom domain, secrets or workflow configuration are required for this static
 
 ## Content and privacy
 
-- Reporting: implemented operational work; additional architecture changes are explicitly proposals.
+- Reporting: operational work and spreadsheet reporting displays performed, with source checks against Tableau. A separate reporting pilot was presented and tested; expansion and broader implementation remained pending. Other architecture changes remain proposals.
+- Continuity: documented learning-operations coverage workflow; the public static checklist is a new fictional illustration, not an original handover or measured coverage outcome.
+- Pilot: requirements, presentation and testing; no full rollout or quantified business impact claimed.
 - Incident QA: investigation completed; recommendation implementation is not claimed. The expanded incident case adds a new fictional six-event scenario. Source filters affect the displayed timeline and review packet; deselection never proves absence, and changing a selection immediately invalidates an existing review. Facts cite evidence, hypotheses remain qualified, and the demo never changes attendance or assigns responsibility. Its CSV exports all six fictional events regardless of filters.
 - Enrollment wizard and Gmail routing: proposals, not original production implementations. The expanded wizard is a new four-step browser prototype using only fixed fictional request, region and site choices. It does not request names or contact data, perform enrollment, check actual compliance or connect to an operational system. A human-review hold is explicit when a fictional record or path change is unresolved. Generated notes are qualified drafts only; no request is submitted.
 - The expanded data-integrity case includes a newly recreated validation worksheet. All ten request rows, the code dictionary and the validation rules are fictional. Unknown, ambiguous, missing and conflicting references are held; a repeated identical request is excluded. The sample and its counts are not original business records or measured outcomes.
@@ -42,6 +46,8 @@ No custom domain, secrets or workflow configuration are required for this static
 - The site does not connect to Gmail, send messages, store form data or execute enrollment actions. Mailto opens the visitor's mail app.
 
 ## Verification
+
+Update of 9 November 2026: aligned the portfolio and public résumé with confirmed reporting automation, source-based validation, handover documentation and a presented/tested reporting pilot. Added public continuity and pilot summaries. Apps Script supports reporting displays in Sheets from CSV; Gemini/ChatGPT assist parts of processing; outputs are checked against Tableau. Pilot expansion and broader implementation remained pending. Its documented shadow-run sequence remains a plan, not a claim of completed validation. Internal documents, records and credentials were not included. Existing fictional demo logic and data remain unchanged. Static HTML/link/content checks and PDF visual review were performed for this update; browser publication verification follows deployment.
 
 Update of 8 November 2026: clarified recruiter-facing homepage copy, linked all four expanded cases, refined responsive navigation and readable form controls, and invalidated the homepage simulator's result whenever its inputs change. Original portrait, public résumé and existing demonstration data remain unchanged.
 
