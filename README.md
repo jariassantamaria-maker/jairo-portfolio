@@ -17,6 +17,7 @@ A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivo
 - Expanded case 12: [Operational Leadership & Team Enablement](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/team-enablement.html)
 - Expanded case 13: [Service Quality Research & Technical Logs](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/service-quality-research.html)
 - Current résumé: [Printable HTML](https://jariassantamaria-maker.github.io/jairo-portfolio/resume.html)
+- Expanded case 14: [Product Discovery & Business Requirements](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/product-operations-discovery.html)
 - Source: [GitHub repository](https://github.com/jariassantamaria-maker/jairo-portfolio)
 
 Published through GitHub Pages from the `main` branch and repository root.
