@@ -13,7 +13,7 @@ A self-contained English portfolio using Jairo’s LinkedIn visual identity: ivo
 - Expanded case 08: [Change Requests, SOPs & Operational Governance](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/operations-governance.html)
 - Expanded case 09: [Learner Widget Pro & Data QA](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/learner-operations-tool.html)
 - Expanded case 10: [Trainer Intelligence & Matching Support](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/trainer-intelligence.html)
-- Expanded case 11: [Amazon Business Unit Anomaly Audit](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/amazon-bu-audit.html)
+- Expanded case 11: [Enterprise Business Unit Anomaly Audit](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/enterprise-bu-audit.html)
 - Expanded case 12: [Operational Leadership & Team Enablement](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/team-enablement.html)
 - Expanded case 13: [Service Quality Research & Technical Logs](https://jariassantamaria-maker.github.io/jairo-portfolio/case-studies/service-quality-research.html)
 - Current résumé: [Printable HTML](https://jariassantamaria-maker.github.io/jairo-portfolio/resume.html)
