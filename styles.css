@@ -257,3 +257,11 @@ footer > span { align-self: center; }
 .method-grid p { margin: 0; font-size: 14px; line-height: 1.6; }
 @media(max-width: 950px) { .method-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px 28px; } }
 @media(max-width: 560px) { .method-section { padding: 35px 0 44px; } .method-grid { grid-template-columns: 1fr; gap: 18px; } }
+
+/* Relevance-first recruiter spotlight */
+.third-party-spotlight{margin:0 0 36px;padding:26px 30px 28px;border:1px solid rgba(27,60,56,.24);border-left:5px solid var(--forest);background:rgba(168,182,157,.12);border-radius:4px}
+.third-party-spotlight .eyebrow{margin:0 0 9px}
+.third-party-spotlight h3{font-size:clamp(24px,3vw,36px);line-height:1.17;margin:0 0 14px}
+.third-party-spotlight p:not(.eyebrow){max-width:850px;margin:0 0 17px;line-height:1.65}
+.third-party-spotlight .text-link{display:inline-block}
+@media(max-width:640px){.third-party-spotlight{padding:20px 18px;margin-bottom:24px}}
